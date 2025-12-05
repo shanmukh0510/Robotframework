@@ -1,0 +1,1127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.6 on win32)" generated="2025-03-18T18:14:17.108649" rpa="false" schemaversion="5">
+<suite id="s1" name="Automation" source="C:\Users\shanm\PycharmProjects\RobotFrameWork\Automation">
+<suite id="s1-s1" name="Alert" source="C:\Users\shanm\PycharmProjects\RobotFrameWork\Automation\alert.robot">
+<test id="s1-s1-t1" name="alerthandle" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:14:17.389682" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T18:14:17.388712" elapsed="7.620528"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:14:25.009240" level="INFO">Clicking button 'xpath://button[@id='alertBtn']'.</msg>
+<arg>xpath://button[@id='alertBtn']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:14:25.009240" elapsed="0.116267"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:14:25.126949" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2025-03-18T18:14:25.125507" elapsed="0.004997"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:14:25.131506" level="INFO">Clicking button 'xpath://button[@id='confirmBtn']'.</msg>
+<arg>xpath://button[@id='confirmBtn']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:14:25.131506" elapsed="0.099905"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:14:25.232426" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>dismiss</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2025-03-18T18:14:25.232426" elapsed="0.004033"/>
+</kw>
+<kw name="Alert Should Be Present" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:14:25.237457" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg time="2025-03-18T18:14:30.366362" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-18T18:14:30.366362" level="FAIL">Alert not found in 5 seconds.</msg>
+<arg>Press a button!</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<status status="FAIL" start="2025-03-18T18:14:25.237457" elapsed="5.232371">Alert not found in 5 seconds.</status>
+</kw>
+<kw name="Alert Should Not Be Present" owner="SeleniumLibrary">
+<arg>Press a button!</arg>
+<doc>Verifies that no alert is present.</doc>
+<status status="NOT RUN" start="2025-03-18T18:14:30.470306" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-03-18T18:14:17.388009" elapsed="13.083356">Alert not found in 5 seconds.</status>
+</test>
+<status status="FAIL" start="2025-03-18T18:14:17.151174" elapsed="13.321377"/>
+</suite>
+<suite id="s1-s2" name="Browsercommand" source="C:\Users\shanm\PycharmProjects\RobotFrameWork\Automation\browsercommand.robot">
+<test id="s1-s2-t1" name="browsercommands" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:14:30.476880" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.in/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T18:14:30.476880" elapsed="3.372387"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-18T18:14:33.851291" elapsed="0.065219"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:14:35.919617" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:14:33.919503" elapsed="2.000114"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:14:35.920618" level="INFO">Opening url 'https://testautomationpractice.blogspot.com/'</msg>
+<arg>${url2}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-03-18T18:14:35.919617" elapsed="3.718642"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:14:41.639685" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:14:39.639256" elapsed="2.000429"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2025-03-18T18:14:41.640263" elapsed="0.032531"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:14:43.674456" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:14:41.674002" elapsed="2.000454"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-18T18:14:43.674456" elapsed="2.200326"/>
+</kw>
+<status status="PASS" start="2025-03-18T18:14:30.475876" elapsed="15.399355"/>
+</test>
+<status status="PASS" start="2025-03-18T18:14:30.472551" elapsed="15.404031"/>
+</suite>
+<suite id="s1-s3" name="Checkboxes" source="C:\Users\shanm\PycharmProjects\RobotFrameWork\Automation\checkboxes.robot">
+<test id="s1-s3-t1" name="checkboxes" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:14:45.880378" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T18:14:45.880378" elapsed="4.916621"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:14:50.798034" level="INFO">Selecting checkbox 'xpath://input[@id='sunday']'.</msg>
+<arg>xpath://input[@id='sunday']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:14:50.796999" elapsed="0.266462"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:14:51.064478" level="INFO">Selecting checkbox 'id:monday'.</msg>
+<arg>id:monday</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:14:51.064478" elapsed="0.066023"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:14:53.132192" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:14:51.131709" elapsed="2.000483"/>
+</kw>
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:14:53.132618" level="INFO">Unselecting checkbox 'id:monday'.</msg>
+<arg>id:monday</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:14:53.132618" elapsed="0.067900"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:14:58.203358" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:14:53.201669" elapsed="5.001689"/>
+</kw>
+<status status="PASS" start="2025-03-18T18:14:45.878870" elapsed="12.324843"/>
+</test>
+<status status="PASS" start="2025-03-18T18:14:45.877655" elapsed="12.326931"/>
+</suite>
+<suite id="s1-s4" name="Closebrowser" source="C:\Users\shanm\PycharmProjects\RobotFrameWork\Automation\closebrowser.robot">
+<test id="s1-s4-t1" name="closingebrowser" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:14:58.207522" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.in/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T18:14:58.207522" elapsed="2.881769"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-18T18:15:01.091315" elapsed="1.073594"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:15:05.166043" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:15:02.165907" elapsed="3.000136"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:15:05.166455" level="INFO">Opening browser 'chrome' to base url 'https://www.flipkart.com/'.</msg>
+<arg>${url2}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T18:15:05.166455" elapsed="3.559557"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-18T18:15:08.728019" elapsed="0.165336"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:15:11.893823" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:15:08.893355" elapsed="3.000468"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-03-18T18:15:11.893823" elapsed="20.913570"/>
+</kw>
+<status status="PASS" start="2025-03-18T18:14:58.207522" elapsed="34.600647"/>
+</test>
+<status status="PASS" start="2025-03-18T18:14:58.205297" elapsed="34.604057"/>
+</suite>
+<suite id="s1-s5" name="Draganddrop" source="C:\Users\shanm\PycharmProjects\RobotFrameWork\Automation\draganddrop.robot">
+<test id="s1-s5-t1" name="draganddrop" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:15:32.813573" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T18:15:32.813573" elapsed="5.129177"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-18T18:15:37.944020" elapsed="0.047289"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:15:39.992516" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:15:37.992325" elapsed="2.000191"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>xpath://p[normalize-space()='Drag me to my target']</arg>
+<arg>xpath://div[@id='droppable']</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2025-03-18T18:15:39.992941" elapsed="0.578405"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:15:42.572603" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:15:40.572205" elapsed="2.000398"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-18T18:15:42.573108" elapsed="2.163655"/>
+</kw>
+<status status="PASS" start="2025-03-18T18:15:32.813573" elapsed="11.923819"/>
+</test>
+<status status="PASS" start="2025-03-18T18:15:32.811360" elapsed="11.927119"/>
+</suite>
+<suite id="s1-s6" name="Dropdown" source="C:\Users\shanm\PycharmProjects\RobotFrameWork\Automation\dropdown.robot">
+<test id="s1-s6-t1" name="SelectDropdown" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:15:48.835938" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T18:15:48.835938" elapsed="5.093046"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-18T18:15:53.930492" elapsed="0.032254"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:15:53.963811" level="INFO">Selecting options from selection list 'id:country' by label Canada.</msg>
+<arg>id:country</arg>
+<arg>Canada</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-03-18T18:15:53.963811" elapsed="0.093133"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:15:57.058628" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:15:54.058011" elapsed="3.000617"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:15:57.059957" level="INFO">Selecting options from selection list 'xpath://select[@id='country']' by index 5.</msg>
+<arg>xpath://select[@id='country']</arg>
+<arg>5</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-03-18T18:15:57.058628" elapsed="0.073551"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:16:00.132901" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:15:57.132739" elapsed="3.000162"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:16:00.133914" level="INFO">Selecting options from selection list 'xpath://select[@id='country']' by value india.</msg>
+<arg>xpath://select[@id='country']</arg>
+<arg>india</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-03-18T18:16:00.132901" elapsed="0.058350"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:16:03.192927" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:16:00.192199" elapsed="3.000728"/>
+</kw>
+<status status="PASS" start="2025-03-18T18:15:48.835422" elapsed="14.357909"/>
+</test>
+<status status="PASS" start="2025-03-18T18:15:44.739670" elapsed="18.454899"/>
+</suite>
+<suite id="s1-s7" name="Implicitwait" source="C:\Users\shanm\PycharmProjects\RobotFrameWork\Automation\implicitwait.robot">
+<test id="s1-s7-t1" name="Speedtest" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:16:03.197849" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T18:16:03.197849" elapsed="6.926739"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-18T18:16:10.125134" elapsed="0.036233"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:16:10.162337" level="INFO">${wait} = 0 seconds</msg>
+<var>${wait}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-03-18T18:16:10.161871" elapsed="0.000466"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${wait}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-18T18:16:10.162337" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-03-18T18:16:10.163337" elapsed="0.002417"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:16:10.166757" level="INFO">${wait} = 10 seconds</msg>
+<var>${wait}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-03-18T18:16:10.166757" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${wait}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-18T18:16:10.167972" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:16:10.169277" level="INFO">Typing text 'shanmukh' into text field 'xpath://inpu[@id='name']'.</msg>
+<msg time="2025-03-18T18:16:20.396301" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-18T18:16:20.397376" level="FAIL">Element with locator 'xpath://inpu[@id='name']' not found.</msg>
+<arg>xpath://inpu[@id='name']</arg>
+<arg>shanmukh</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-03-18T18:16:10.167972" elapsed="10.274975">Element with locator 'xpath://inpu[@id='name']' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath://input[@id='email']</arg>
+<arg>shanmukharao@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-18T18:16:20.443848" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath://input[@id='phone']</arg>
+<arg>1234567890</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-18T18:16:20.444375" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath://textarea[@id='textarea']</arg>
+<arg>pune,india</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-18T18:16:20.444375" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://input[@id='male']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-18T18:16:20.444375" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-03-18T18:16:20.444375" elapsed="0.000000"/>
+</kw>
+<kw name="Get Selenium Speed" owner="SeleniumLibrary">
+<var>${speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" start="2025-03-18T18:16:20.444375" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${speed}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-03-18T18:16:20.445403" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-03-18T18:16:20.445403" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-03-18T18:16:03.197849" elapsed="17.247554">Element with locator 'xpath://inpu[@id='name']' not found.</status>
+</test>
+<status status="FAIL" start="2025-03-18T18:16:03.195255" elapsed="17.250148"/>
+</suite>
+<suite id="s1-s8" name="Input" source="C:\Users\shanm\PycharmProjects\RobotFrameWork\Automation\input.robot">
+<test id="s1-s8-t1" name="inputBox" line="11">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-03-18T18:16:20.449695" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:16:20.450700" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.in/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T18:16:20.449695" elapsed="7.912039"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:16:28.362691" level="INFO">Typing text 'google' into text field 'xpath://textarea[@id='APjFqb']'.</msg>
+<arg>xpath://textarea[@id='APjFqb']</arg>
+<arg>google</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:16:28.362157" elapsed="15.090559"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:16:43.453733" level="INFO">Clicking button 'xpath://div[@class='lJ9FBc']//input[@name='btnK']'.</msg>
+<arg>xpath://div[@class='lJ9FBc']//input[@name='btnK']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:16:43.452716" elapsed="15.198140"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>google</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-03-18T18:16:58.651386" elapsed="5.014090"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:17:23.813567" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-18T18:17:23.813567" level="FAIL">Element with locator '//textarea[@id='APjFqb']' not found.</msg>
+<arg>//textarea[@id='APjFqb']</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-03-18T18:17:03.665838" elapsed="20.165774">Element with locator '//textarea[@id='APjFqb']' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-03-18T18:17:23.832462" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath://textarea[@id='APjFqb']</arg>
+<arg>facebook</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-18T18:17:23.832462" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://span[@class='KlpaXd z1asCe MZy1Rb']//*[name()='svg']//*[name()='path' and contains(@d,'M15.5 14h-')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-18T18:17:23.832462" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-03-18T18:16:20.449695" elapsed="63.382767">Element with locator '//textarea[@id='APjFqb']' not found.</status>
+</test>
+<status status="FAIL" start="2025-03-18T18:16:20.447342" elapsed="63.386613"/>
+</suite>
+<suite id="s1-s9" name="Inputvalidation" source="C:\Users\shanm\PycharmProjects\RobotFrameWork\Automation\inputvalidation.robot">
+<test id="s1-s9-t1" name="ValidationTest" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:17:23.837359" level="INFO">Opening browser 'chrome' to base url 'https://www.flipkart.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T18:17:23.837359" elapsed="8.752769"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Flipkart</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-03-18T18:17:32.591202" elapsed="5.028961"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-18T18:17:37.620666" elapsed="5.126610"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:17:47.753435" level="INFO">Page title is 'Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!'.</msg>
+<arg>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-03-18T18:17:42.747715" elapsed="5.005720"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:17:49.754063" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:17:47.753855" elapsed="2.000208"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:17:49.754294" level="INFO">Clicking button 'xpath://span[normalize-space()='Login']'.</msg>
+<msg time="2025-03-18T18:18:15.083802" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-18T18:18:15.084962" level="FAIL">Button with locator 'xpath://span[normalize-space()='Login']' not found.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2025-03-18T18:17:49.754294" elapsed="25.330668">Button with locator 'xpath://span[normalize-space()='Login']' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-03-18T18:18:15.084962" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-03-18T18:18:15.086116" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-03-18T18:17:23.835951" elapsed="51.250165">Button with locator 'xpath://span[normalize-space()='Login']' not found.</status>
+</test>
+<status status="FAIL" start="2025-03-18T18:17:23.834786" elapsed="51.251330"/>
+</suite>
+<suite id="s1-s10" name="Keyword" source="C:\Users\shanm\PycharmProjects\RobotFrameWork\Automation\keyword.robot">
+<test id="s1-s10-t1" name="fillformtest" line="9">
+<kw name="launchingbrowser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:18:15.091437" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${weburl}</arg>
+<arg>${webbrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T18:18:15.091437" elapsed="10.389491"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-18T18:18:25.480928" elapsed="5.074938"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:18:32.556106" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:18:30.555866" elapsed="2.000240"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:18:37.562918" level="INFO">${title} = Automation Testing Practice</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-03-18T18:18:32.556106" elapsed="5.006812"/>
+</kw>
+<return>
+<value>${title}</value>
+<status status="PASS" start="2025-03-18T18:18:37.562918" elapsed="0.001001"/>
+</return>
+<msg time="2025-03-18T18:18:37.563919" level="INFO">${pagetitle} = Automation Testing Practice</msg>
+<var>${pagetitle}</var>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2025-03-18T18:18:15.091437" elapsed="22.472482"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${pagetitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-18T18:18:37.563919" elapsed="0.001135"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-18T18:18:37.565054" level="INFO">Automation Testing Practice</msg>
+<arg>${pagetitle}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-18T18:18:37.565054" elapsed="0.000000"/>
+</kw>
+<kw name="inputtingvalues">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:18:37.566225" level="INFO">Typing text 'shanmukharao' into text field 'xpath://input[@id='name']'.</msg>
+<arg>xpath://input[@id='name']</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:18:37.566225" elapsed="15.092642"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:18:52.658867" level="INFO">Typing text 'shanmukharao@gmail.com' into text field 'xpath://input[@id='email']'.</msg>
+<arg>xpath://input[@id='email']</arg>
+<arg>${gmail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:18:52.658867" elapsed="15.074237"/>
+</kw>
+<arg>shanmukharao</arg>
+<arg>shanmukharao@gmail.com</arg>
+<status status="PASS" start="2025-03-18T18:18:37.566225" elapsed="30.166879"/>
+</kw>
+<status status="PASS" start="2025-03-18T18:18:15.090252" elapsed="52.643368"/>
+</test>
+<status status="PASS" start="2025-03-18T18:18:15.087307" elapsed="52.647476"/>
+</suite>
+<suite id="s1-s11" name="Mouseaction" source="C:\Users\shanm\PycharmProjects\RobotFrameWork\Automation\mouseaction.robot">
+<test id="s1-s11-t1" name="rightclick" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:19:07.740287" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T18:19:07.740287" elapsed="10.124261"/>
+</kw>
+<kw name="Open Context Menu" owner="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='START']</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:19:17.864548" elapsed="15.322026"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:19:35.187635" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:19:33.186932" elapsed="2.000703"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-18T18:19:35.187997" elapsed="7.048903"/>
+</kw>
+<status status="PASS" start="2025-03-18T18:19:07.737769" elapsed="34.500021"/>
+</test>
+<test id="s1-s11-t2" name="doubleclick" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:19:42.239098" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T18:19:42.239098" elapsed="10.884435"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:19:53.124011" level="INFO">Double clicking element 'xpath://button[normalize-space()='Copy Text']'.</msg>
+<arg>xpath://button[normalize-space()='Copy Text']</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:19:53.124011" elapsed="10.316904"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:20:05.441545" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:20:03.441264" elapsed="2.000281"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-18T18:20:05.441938" elapsed="7.074540"/>
+</kw>
+<status status="PASS" start="2025-03-18T18:19:42.239098" elapsed="30.277941"/>
+</test>
+<status status="PASS" start="2025-03-18T18:19:07.735762" elapsed="64.781782"/>
+</suite>
+<suite id="s1-s12" name="Radiobutton" source="C:\Users\shanm\PycharmProjects\RobotFrameWork\Automation\radiobutton.robot">
+<test id="s1-s12-t1" name="RadioButton" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:20:12.523459" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T18:20:12.522257" elapsed="10.468392"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-18T18:20:22.990649" elapsed="5.030699"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:20:28.021699" level="INFO">Selecting 'female' from radio button 'gender'.</msg>
+<arg>gender</arg>
+<arg>female</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-03-18T18:20:28.021699" elapsed="15.091456"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:20:46.114104" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:20:43.113531" elapsed="3.000573"/>
+</kw>
+<status status="PASS" start="2025-03-18T18:20:12.522257" elapsed="33.592268"/>
+</test>
+<status status="PASS" start="2025-03-18T18:20:12.518543" elapsed="33.596922"/>
+</suite>
+<suite id="s1-s13" name="Screenshot" source="C:\Users\shanm\PycharmProjects\RobotFrameWork\Automation\screenshot.robot">
+<test id="s1-s13-t1" name="screenshot" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:20:46.120593" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T18:20:46.119592" elapsed="9.456887"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:21:05.707501" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="fname.png"&gt;&lt;img src="fname.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>xpath://input[@id='name']</arg>
+<arg>fname.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2025-03-18T18:20:55.576479" elapsed="10.131022"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:21:07.709482" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:21:05.708986" elapsed="2.001002"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:21:12.870323" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="page.png"&gt;&lt;img src="page.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>page.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-03-18T18:21:07.709988" elapsed="5.160335"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:21:14.871946" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:21:12.870323" elapsed="2.001623"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-18T18:21:14.871946" elapsed="7.067205"/>
+</kw>
+<status status="PASS" start="2025-03-18T18:20:46.119592" elapsed="35.819559"/>
+</test>
+<status status="PASS" start="2025-03-18T18:20:46.116984" elapsed="35.823516"/>
+</suite>
+<suite id="s1-s14" name="Scroll" source="C:\Users\shanm\PycharmProjects\RobotFrameWork\Automation\scroll.robot">
+<test id="s1-s14-t1" name="Scrollingpage" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:21:21.978903" level="INFO">Opening browser 'chrome' to base url 'https://en.wikipedia.org/wiki/Main_Page'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T18:21:21.978903" elapsed="7.746165"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:21:29.729477" level="INFO">Executing JavaScript:
+window.scrollTo(0,2500)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,2500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-03-18T18:21:29.726099" elapsed="5.010301"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:21:37.736948" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:21:34.736400" elapsed="3.000548"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:21:57.899968" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-18T18:21:57.899968" level="FAIL">Element with locator '//img[@alt='Philippe Chaperon']' not found.</msg>
+<arg>//img[@alt='Philippe Chaperon']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="FAIL" start="2025-03-18T18:21:37.736948" elapsed="20.164032">Element with locator '//img[@alt='Philippe Chaperon']' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-03-18T18:21:57.901838" elapsed="0.000000"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>window.scrollTo(0,document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2025-03-18T18:21:57.902528" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-03-18T18:21:57.902894" elapsed="0.000000"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>window.scrollTo(0,-document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2025-03-18T18:21:57.902894" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-03-18T18:21:57.902894" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-03-18T18:21:57.902894" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-03-18T18:21:21.977521" elapsed="35.926373">Element with locator '//img[@alt='Philippe Chaperon']' not found.</status>
+</test>
+<status status="FAIL" start="2025-03-18T18:21:21.941503" elapsed="35.962391"/>
+</suite>
+<suite id="s1-s15" name="Speedtest" source="C:\Users\shanm\PycharmProjects\RobotFrameWork\Automation\speedtest.robot">
+<test id="s1-s15-t1" name="Speedtest" line="7">
+<kw name="Get Selenium Speed" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:21:57.908780" level="INFO">${speed} = 5 seconds</msg>
+<var>${speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-03-18T18:21:57.908780" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${speed}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-18T18:21:57.909757" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:21:57.909757" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T18:21:57.909757" elapsed="11.282378"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-18T18:22:09.192135" elapsed="5.038100"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:22:14.231243" level="INFO">Typing text 'shanmukh' into text field 'xpath://input[@id='name']'.</msg>
+<arg>xpath://input[@id='name']</arg>
+<arg>shanmukh</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:22:14.230235" elapsed="15.106018"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:22:29.336253" level="INFO">Typing text 'shanmukharao@gmail.com' into text field 'xpath://input[@id='email']'.</msg>
+<arg>xpath://input[@id='email']</arg>
+<arg>shanmukharao@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:22:29.336253" elapsed="15.107470"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:22:44.444218" level="INFO">Typing text '1234567890' into text field 'xpath://input[@id='phone']'.</msg>
+<arg>xpath://input[@id='phone']</arg>
+<arg>1234567890</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:22:44.444218" elapsed="15.070727"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:22:59.516037" level="INFO">Typing text 'pune,india' into text field 'xpath://textarea[@id='textarea']'.</msg>
+<arg>xpath://textarea[@id='textarea']</arg>
+<arg>pune,india</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:22:59.516037" elapsed="15.079061"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:23:14.596079" level="INFO">Clicking element 'xpath://input[@id='male']'.</msg>
+<arg>xpath://input[@id='male']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:23:14.595477" elapsed="10.078028"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:23:29.673583" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:23:24.673505" elapsed="5.000078"/>
+</kw>
+<kw name="Get Selenium Speed" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:23:29.674592" level="INFO">${speed} = 5 seconds</msg>
+<var>${speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-03-18T18:23:29.673583" elapsed="0.001009"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${speed}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-18T18:23:29.674592" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-18T18:23:29.675684" elapsed="7.077732"/>
+</kw>
+<status status="PASS" start="2025-03-18T18:21:57.908273" elapsed="98.845830"/>
+</test>
+<status status="PASS" start="2025-03-18T18:21:57.904988" elapsed="98.850395"/>
+</suite>
+<suite id="s1-s16" name="Test" source="C:\Users\shanm\PycharmProjects\RobotFrameWork\Automation\test.robot">
+<test id="s1-s16-t1" name="Google" line="11">
+<kw name="insidegoogle">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:23:36.760630" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.in/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T18:23:36.760630" elapsed="8.200788"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-18T18:23:44.961418" elapsed="5.135006"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:24:00.096697" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:23:50.096424" elapsed="10.000273"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-18T18:24:00.096697" elapsed="7.066791"/>
+</kw>
+<status status="PASS" start="2025-03-18T18:23:36.760630" elapsed="30.402858"/>
+</kw>
+<status status="PASS" start="2025-03-18T18:23:36.759800" elapsed="30.404485"/>
+</test>
+<status status="PASS" start="2025-03-18T18:23:36.756219" elapsed="30.409438"/>
+</suite>
+<suite id="s1-s17" name="Timeout" source="C:\Users\shanm\PycharmProjects\RobotFrameWork\Automation\timeout.robot">
+<test id="s1-s17-t1" name="Speedtest" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:24:07.169080" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T18:24:07.169080" elapsed="11.803292"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-18T18:24:18.972372" elapsed="5.128613"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-03-18T18:24:24.101992" elapsed="0.001050"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>5 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-03-18T18:24:24.103042" elapsed="8.042164"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Automation Testing Practice</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-03-18T18:24:32.145559" elapsed="1.017707"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:24:33.163621" level="INFO">Typing text 'shanmukh' into text field 'xpath://input[@id='name']'.</msg>
+<arg>xpath://input[@id='name']</arg>
+<arg>shanmukh</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:24:33.163621" elapsed="3.092481"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:24:36.256444" level="INFO">Typing text 'shanmukharao@gmail.com' into text field 'xpath://input[@id='email']'.</msg>
+<arg>xpath://input[@id='email']</arg>
+<arg>shanmukharao@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:24:36.256444" elapsed="3.074946"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:24:39.332390" level="INFO">Typing text '1234567890' into text field 'xpath://input[@id='phone']'.</msg>
+<arg>xpath://input[@id='phone']</arg>
+<arg>1234567890</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:24:39.331390" elapsed="3.068433"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:24:42.401458" level="INFO">Typing text 'pune,india' into text field 'xpath://textarea[@id='textarea']'.</msg>
+<arg>xpath://textarea[@id='textarea']</arg>
+<arg>pune,india</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:24:42.401458" elapsed="3.063079"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:24:45.465775" level="INFO">Clicking element 'xpath://input[@id='male']'.</msg>
+<arg>xpath://input[@id='male']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:24:45.464775" elapsed="2.065165"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:24:52.530396" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:24:47.530295" elapsed="5.000101"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-18T18:24:52.530396" elapsed="3.059948"/>
+</kw>
+<status status="PASS" start="2025-03-18T18:24:07.167664" elapsed="48.423340"/>
+</test>
+<status status="PASS" start="2025-03-18T18:24:07.165657" elapsed="48.427297"/>
+</suite>
+<suite id="s1-s18" name="Webtable" source="C:\Users\shanm\PycharmProjects\RobotFrameWork\Automation\webtable.robot">
+<test id="s1-s18-t1" name="webtable" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:24:55.597576" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T18:24:55.597576" elapsed="6.225335"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:25:02.837742" level="INFO">${rows} = 7</msg>
+<var>${rows}</var>
+<arg>xpath://table[@name='BookTable']/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:25:01.822911" elapsed="1.014831"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:25:03.850577" level="INFO">${column} = 4</msg>
+<var>${column}</var>
+<arg>xpath://table[@name='BookTable']/tbody/tr[1]/th</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:25:02.837742" elapsed="1.012835"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${rows}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-18T18:25:03.850996" elapsed="0.000573"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${column}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-18T18:25:03.851809" elapsed="0.000398"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:25:05.881058" level="INFO">${data} = Mukesh</msg>
+<var>${data}</var>
+<arg>xpath://table[@name='BookTable']/tbody/tr[5]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:25:03.852841" elapsed="2.028217"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${data}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-18T18:25:05.881495" elapsed="0.000751"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:25:07.908755" level="INFO">${alldata} = BookName Author Subject Price
+Learn Selenium Amit Selenium 300
+Learn Java Mukesh Java 500
+Learn JS Animesh Javascript 300
+Master In Selenium Mukesh Selenium 3000
+Master In Java Amod JAVA 2000
+Master I...</msg>
+<var>${alldata}</var>
+<arg>xpath://table[@name='BookTable']/tbody</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-18T18:25:05.882679" elapsed="2.026076"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${alldata}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-18T18:25:07.909266" elapsed="0.000465"/>
+</kw>
+<kw name="Table Column Should Contain" owner="SeleniumLibrary">
+<arg>xpath://table[@name='BookTable']</arg>
+<arg>3</arg>
+<arg>Selenium</arg>
+<doc>Verifies table column contains text ``expected``.</doc>
+<status status="PASS" start="2025-03-18T18:25:07.911121" elapsed="6.059244"/>
+</kw>
+<kw name="Table Row Should Contain" owner="SeleniumLibrary">
+<arg>xpath://table[@name='BookTable']</arg>
+<arg>6</arg>
+<arg>JAVA</arg>
+<doc>Verifies that table row contains text ``expected``.</doc>
+<status status="PASS" start="2025-03-18T18:25:13.971372" elapsed="4.039069"/>
+</kw>
+<kw name="Table Cell Should Contain" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:25:34.077382" level="INFO">Table cell contains '3000'.</msg>
+<arg>XPATH://table[@name='BookTable']</arg>
+<arg>5</arg>
+<arg>4</arg>
+<arg>3000</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<status status="PASS" start="2025-03-18T18:25:18.011456" elapsed="16.065926"/>
+</kw>
+<kw name="Table Header Should Contain" owner="SeleniumLibrary">
+<arg>xpath://table[@name='BookTable']</arg>
+<arg>Author</arg>
+<doc>Verifies table header contains text ``expected``.</doc>
+<status status="PASS" start="2025-03-18T18:25:34.077792" elapsed="6.054977"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-18T18:25:40.133188" elapsed="3.055420"/>
+</kw>
+<status status="PASS" start="2025-03-18T18:24:55.596579" elapsed="47.592553"/>
+</test>
+<status status="PASS" start="2025-03-18T18:24:55.594032" elapsed="47.596315"/>
+</suite>
+<suite id="s1-s19" name="Windows" source="C:\Users\shanm\PycharmProjects\RobotFrameWork\Automation\windows.robot">
+<test id="s1-s19-t1" name="wondoeshandle" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:25:43.194036" level="INFO">Opening browser 'chrome' to base url 'https://robotframework.org/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-18T18:25:43.194036" elapsed="5.286821"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-18T18:25:50.481385" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-18T18:25:48.481221" elapsed="2.000164"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-18T18:25:50.481792" level="INFO">Clicking element 'xpath://span[normalize-space()='NAVIGATE 2025']'.</msg>
+<msg time="2025-03-18T18:26:02.698355" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-18T18:26:02.698355" level="FAIL">Element with locator 'xpath://span[normalize-space()='NAVIGATE 2025']' not found.</msg>
+<arg>xpath://span[normalize-space()='NAVIGATE 2025']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-03-18T18:25:50.481792" elapsed="12.221354">Element with locator 'xpath://span[normalize-space()='NAVIGATE 2025']' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-03-18T18:26:02.703441" elapsed="0.000000"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>Robot Framework</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-18T18:26:02.704577" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-03-18T18:26:02.704894" elapsed="0.000000"/>
+</kw>
+<kw name="Close Window" owner="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="NOT RUN" start="2025-03-18T18:26:02.705696" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-03-18T18:26:02.705696" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-03-18T18:26:02.706454" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-03-18T18:25:43.194036" elapsed="19.512418">Element with locator 'xpath://span[normalize-space()='NAVIGATE 2025']' not found.</status>
+</test>
+<status status="FAIL" start="2025-03-18T18:25:43.191348" elapsed="19.515775"/>
+</suite>
+<status status="FAIL" start="2025-03-18T18:14:17.111153" elapsed="705.597479"/>
+</suite>
+<statistics>
+<total>
+<stat pass="14" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Automation" id="s1" pass="14" fail="6" skip="0">Automation</stat>
+<stat name="Alert" id="s1-s1" pass="0" fail="1" skip="0">Automation.Alert</stat>
+<stat name="Browsercommand" id="s1-s2" pass="1" fail="0" skip="0">Automation.Browsercommand</stat>
+<stat name="Checkboxes" id="s1-s3" pass="1" fail="0" skip="0">Automation.Checkboxes</stat>
+<stat name="Closebrowser" id="s1-s4" pass="1" fail="0" skip="0">Automation.Closebrowser</stat>
+<stat name="Draganddrop" id="s1-s5" pass="1" fail="0" skip="0">Automation.Draganddrop</stat>
+<stat name="Dropdown" id="s1-s6" pass="1" fail="0" skip="0">Automation.Dropdown</stat>
+<stat name="Implicitwait" id="s1-s7" pass="0" fail="1" skip="0">Automation.Implicitwait</stat>
+<stat name="Input" id="s1-s8" pass="0" fail="1" skip="0">Automation.Input</stat>
+<stat name="Inputvalidation" id="s1-s9" pass="0" fail="1" skip="0">Automation.Inputvalidation</stat>
+<stat name="Keyword" id="s1-s10" pass="1" fail="0" skip="0">Automation.Keyword</stat>
+<stat name="Mouseaction" id="s1-s11" pass="2" fail="0" skip="0">Automation.Mouseaction</stat>
+<stat name="Radiobutton" id="s1-s12" pass="1" fail="0" skip="0">Automation.Radiobutton</stat>
+<stat name="Screenshot" id="s1-s13" pass="1" fail="0" skip="0">Automation.Screenshot</stat>
+<stat name="Scroll" id="s1-s14" pass="0" fail="1" skip="0">Automation.Scroll</stat>
+<stat name="Speedtest" id="s1-s15" pass="1" fail="0" skip="0">Automation.Speedtest</stat>
+<stat name="Test" id="s1-s16" pass="1" fail="0" skip="0">Automation.Test</stat>
+<stat name="Timeout" id="s1-s17" pass="1" fail="0" skip="0">Automation.Timeout</stat>
+<stat name="Webtable" id="s1-s18" pass="1" fail="0" skip="0">Automation.Webtable</stat>
+<stat name="Windows" id="s1-s19" pass="0" fail="1" skip="0">Automation.Windows</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-03-18T18:14:17.043799" level="WARN">Error in file 'C:\Users\shanm\PycharmProjects\RobotFrameWork\Automation\keyword.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>
